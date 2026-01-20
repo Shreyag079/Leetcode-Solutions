@@ -4,13 +4,15 @@ public:
     {
         int maxp=0;
         int minn=prices[0];
+        int p;
+        
         for(int i=1;i<prices.size();i++)
         {
             if(prices[i]<minn)
               minn=prices[i];
             else
             {
-                int p=prices[i]-minn;
+                p=prices[i]-minn;
                 maxp=max(maxp,p);
             }
         }
